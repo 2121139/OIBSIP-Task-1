@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2ecc71, #3498db); /* Background gradient colors */
+}
+
+.calculator {
+    border: 1px solid #ecf0f1; /* Border color */
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(44, 62, 80, 0.5); /* Box shadow color */
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(44, 62, 80, 0.1); /* Box shadow color */
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #ffffff;
+    text-align: right;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(236, 240, 241, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2ecc71, #3498db);
+}
+
+.equalBtn {
+    background-color: green; /* Equal button background color */
+}
+
+.operator {
+    color: green; /* Operator color */
+}
